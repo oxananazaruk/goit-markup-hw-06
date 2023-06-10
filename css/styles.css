@@ -631,12 +631,25 @@ body {
   margin-bottom: 16px;
 }
 
+.modal-fild {
+  margin-bottom: 8px;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 8px;
+  outline: transparent;
+  padding-left: 38px;
+}
+
+.modal-input:focus {
+  border-color: var(--color-brand);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--color-brand);
 }
 
 .label-input {
@@ -646,6 +659,40 @@ body {
   color: var(--cusromers-color);
   display: block;
   margin-bottom: 4px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--color-primary);
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  outline: transparent;
+}
+
+.modal-comment:focus {
+  border-color: var(--color-brand);
+}
+
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .submit-btn {
