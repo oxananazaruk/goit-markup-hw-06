@@ -470,6 +470,9 @@ body {
   background-color: transparent;
   outline: transparent;
   color: var(--invert-color);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   transition: border-color var(--transition);
 }
 
@@ -489,6 +492,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
+  min-width: 165px;
   background-color: var(--color-brand);
   border-radius: 4px;
   border: none;
@@ -688,6 +692,7 @@ body {
   letter-spacing: 0.02em;
   margin-top: 0;
   margin-bottom: 16px;
+  color: var(--color-primary);
 }
 
 .modal-fild {
@@ -699,6 +704,7 @@ body {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   outline: transparent;
   padding-left: 38px;
   transition: border-color var(--transition);
@@ -735,7 +741,7 @@ body {
 }
 
 .modal-fild-text {
-  margin-bottom: 4px;
+  margin-bottom: 16px;
 }
 
 .modal-comment {
@@ -746,8 +752,13 @@ body {
   border-radius: 4px;
   color: rgba(46, 47, 66, 0.4);
   resize: none;
+  background-color: transparent;
   outline: transparent;
-  transition: border-colo var(--transition);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  transition: border-color var(--transition);
 }
 
 .modal-comment:focus {
@@ -760,6 +771,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.privacy-wrap {
+  margin-bottom: 24px;
 }
 
 .modal-check {
@@ -804,7 +819,7 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  margin: 24px auto;
+  margin: 0 auto;
   padding: 16px 32px;
   min-width: 169px;
   background-color: var(--color-brand);
