@@ -673,6 +673,10 @@ body {
   fill: var(--color-primary);
 }
 
+.modal-fild-text {
+  margin-bottom: 4px;
+}
+
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -695,13 +699,55 @@ body {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-check {
+  width: 16px;
+  height: 16px;
+}
+
+.check-text {
+  /* display: flex; */
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--cusromers-color);
+}
+
+.privacy-link {
+  color: var(--color-brand);
+}
+
+.modal-check-new {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-text .modal-check-new {
+  background-color: var(--color-active);
+  border: none;
+  fill: var(--light-color);
+}
+
 .submit-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto;
   padding: 16px 32px;
   min-width: 169px;
   background-color: var(--color-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
@@ -709,4 +755,5 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--invert-color);
+  transition: background-color var(--transition);
 }

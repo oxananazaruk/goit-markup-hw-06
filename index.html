@@ -628,7 +628,7 @@
             </div>
           </div>
 
-          <div class="modal-fild">
+          <div class="modal-fild-text">
             <label for="user-text" class="label-input">Comment</label>
             <textarea
               name="user-text"
@@ -636,6 +636,25 @@
               class="modal-comment"
               placeholder="Text input"
             ></textarea>
+          </div>
+
+          <div class="">
+            <input
+              type="checkbox"
+              id="conditions-agree"
+              name="conditions-agree"
+              value="on"
+              class="modal-check visualy-hidden"
+            />
+            <label for="conditions-agree" class="check-text">
+              <span class="modal-check-new">
+                <svg class="chec-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-link"> Privacy Policy</a>
+            </label>
           </div>
 
           <button type="submit" class="submit-btn">Send</button>
